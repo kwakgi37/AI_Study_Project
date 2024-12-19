@@ -1,0 +1,86 @@
+/* Sidebar.css */
+.sidebar {
+  width: 250px;
+  background-color: #2E2E3A; /* 다크 네이비 */
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+  transition: height 0.3s ease;
+}
+
+.sidebar-title {
+  font-size: 14px;
+  color: #A5A5B0;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.sidebar-section {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.sidebar-link:hover {
+  background-color: #3A3A4A;
+  border-radius: 4px;
+}
+
+.sidebar-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.notification-badge {
+  background-color: #FF6B6B;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 2px 8px;
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.active .sidebar-link {
+  background-color: #3A3A4A; /* 선택된 항목 배경색 */
+  border-left: 4px solid #3366ff; /* 좌측 파란색 강조 */
+  padding-left: 11px; /* 강조선을 추가한 만큼 패딩 조정 */
+}
+
+.logout-section {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.logout-button:hover {
+  color: #FF6B6B;
+}
+
+.logout-button .sidebar-icon {
+  margin-right: 8px;
+  font-size: 18px;
+}

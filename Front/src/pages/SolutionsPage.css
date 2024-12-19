@@ -1,0 +1,80 @@
+
+
+.solutions-container {
+  display: flex;
+}
+
+.content-wrapper {
+  flex: 1;
+}
+
+.content-area {
+  background-color: #c8d2eb;
+  min-height: 100vh;
+  padding-top: 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+.solution-card-container {
+  background-color: white;
+  border-radius: 3px;
+  padding: 1px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 0;
+  overflow-x: auto;
+  display: flex;
+  white-space: nowrap;
+}
+
+.solution-main-box {
+  flex-direction: column;
+  display: flex;
+  background-color: white;
+  border-radius: 3px;
+  padding: 8px;
+  margin: 16px 16px;
+  position: relative;
+}
+
+.small-box {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 98.3%;
+  height: 50px;
+  background-color: white;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-text {
+  margin-left: 8px;
+  width: 35%;
+  text-align: left;
+}
+
+.center-text {
+  flex: 1;
+  text-align: left;
+}
+
+.button-box {
+  display: flex;
+}
+
+.nav-button {
+  margin-right: 8px;
+  background-color: #F3F6FE;
+}
+
+.custom-solutions-style .problemBox {
+  height:flex;
+}
+
+.custom-solutions-style .explanationBox {
+  height:600px;
+}

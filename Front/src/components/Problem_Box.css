@@ -1,0 +1,83 @@
+.problemArea {
+  margin-top: 60px; /* Adds space at the top */
+  display: flex; /* Aligns child elements in a row */
+  flex-direction: row;
+  border-radius: 3px;
+}
+
+.problemBox {
+  flex: 1; /* Takes up available space */
+  background-color: #ffffff;
+  border-radius: 3px 0 0 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding: 8px;
+}
+
+/* Centers the image within the problemBox */
+.imageContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ensures the image fits within the container */
+.questionImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.answer-box {
+  display: flex;
+  justify-content: flex-end; /* Aligns content to the right */
+}
+
+.answer-input {
+  width: 150px; /* Input width */
+}
+
+.explanationBox {
+  flex: 1;
+  background-color: #f5f5f5; /* 더 밝은 색으로 배경 설정 */
+  border-radius: 0 3px 3px 0;
+  /* display: flex; */
+  align-items: flex-start;
+  /* justify-content: center; */
+  padding: 20px 30px; /* 좌우 여백을 넉넉히 설정하여 책 페이지 같은 느낌 */
+  text-align: justify; /* 양쪽 정렬로 텍스트가 깔끔하게 맞춰짐 */
+  line-height: 1.8; /* 더 여유 있는 줄 간격 */
+  font-size: 1rem; /* 가독성을 높이기 위한 적당한 글씨 크기 */
+  color: #333; /* 어두운 색상으로 텍스트 색 설정 */
+  white-space: pre-wrap;
+  overflow-y: auto;
+  max-width: 100%; /* 박스 전체 너비를 차지하게 설정 */
+  height: 100%; /* 박스 전체 높이 차지 */
+}
+
+
+
+/* Complete button styles */
+.complete-button {
+  margin-left: 8px;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  border-radius: 12px;
+  background-color: #1976d2;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.complete-button:hover {
+  background-color: #1565c0;
+  transform: scale(1.05);
+}
+
+.complete-button:active {
+  background-color: #0d47a1;
+  transform: scale(0.95);
+}

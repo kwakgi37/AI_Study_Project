@@ -1,0 +1,96 @@
+.question-info-box {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 98.3%;
+  height: 50px;
+  background-color: white;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-text {
+  margin-left: 8px;
+  width: 25%;
+  text-align: left;
+}
+
+.center-text {
+  flex: 1;
+  padding-right: 10px;
+  /* text-align: center;  */
+}
+
+.button-box {
+  display: flex;
+  align-items: center; /* 아이콘 수직 정렬 */
+}
+
+.nav-button {
+  margin-right: 8px;
+  background-color: #f3f6fe;
+}
+
+.empty-space {
+  visibility: hidden; /* 레이아웃 일관성을 위한 숨겨진 자리 */
+}
+
+/* Comparison popup 스타일 */
+.comparison-popup {
+  position: absolute;
+  top: 60px; /* 아이콘 아래에 위치하도록 설정 */
+  right: 0;
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  padding: 10px;
+}
+
+.comparison-popup h4 {
+  margin: 0;
+  font-size: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.comparison-popup table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comparison-popup table th,
+.comparison-popup table td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.comparison-popup table th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+/* 정답/오답 텍스트 스타일 */
+.result-text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.correct {
+  color: #007bff; /* 파란색을 더 진하게 조정 */
+  font-weight: bold;
+}
+
+.incorrect {
+  color: #ff0000; /* 더욱 강렬한 빨간색 */
+  font-weight: bold;
+}
+
+.score-text {
+  margin-left: auto; /* 왼쪽으로 밀어주기 */
+}

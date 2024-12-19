@@ -1,0 +1,47 @@
+/* 문제 박스 슬라이드 애니메이션 */
+.slide-forward-enter {
+  transform: translateX(100%);
+  opacity: 0;
+}
+.slide-forward-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+.slide-forward-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+.slide-forward-exit-active {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+.slide-backward-enter {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.slide-backward-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+.slide-backward-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+.slide-backward-exit-active {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+/* 고정 레이아웃 스타일 */
+
+
+.problem-box-container {
+  width: 100%; /* ProblemBox 크기에 맞게 설정 */
+  position: relative;
+  overflow: hidden; /* 애니메이션 영역 밖의 콘텐츠를 숨김 */
+}

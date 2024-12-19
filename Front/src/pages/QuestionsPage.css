@@ -1,0 +1,78 @@
+/* ProblemsPage.css */
+
+.problems-container {
+  display: flex;
+}
+
+.content-wrapper {
+  flex: 1;
+}
+
+.content-area {
+  background-color: white;
+  min-height: 91vh;
+  padding-top: 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+.problem-card-container {
+  background-color: white;
+  border-radius: 3px;
+  padding: 1px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 0;
+  overflow-x: auto;
+  display: flex;
+  white-space: nowrap;
+}
+
+.problem-main-box {
+  height: 50vh;
+  flex: 1;
+  background-color: white;
+  border-radius: 3px;
+  text-align: center;
+  padding: 8px;
+  margin: 16px 16px;
+  position: relative;
+}
+
+.left-text {
+  margin-left: 8px;
+  width: 35%;
+  text-align: left;
+}
+
+.center-text {
+  flex: 1;
+  text-align: left;
+}
+
+.button-box {
+  display: flex;
+}
+
+.nav-button {
+  margin-right: 8px;
+  background-color: #F3F6FE;
+}
+
+.custom-solutions-style .problemBox {
+  height: flex;
+  text-align: center;
+}
+
+.custom-solutions-style .explanationBox {
+  height: 800px;
+}
+
+.questionImage {
+  width: 100%;
+  height: auto;
+  max-width: 700px;
+  object-fit: contain;
+  display: inline-block;
+  margin: 0 auto;
+}
